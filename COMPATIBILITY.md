@@ -1,17 +1,27 @@
-# Compatibility scope (source audit)
+# Conquest World Map Improvement compatibility
 
-Target: Ascension Conquest Reborn / WoW 3.3.5a. Baseline archive: ConquestWorldMapImprovement-0.15.0.zip. All **21 other repositories** on downingwow's GitHub are in regression scope (plus this repository). Relevant projects: NovaInstanceTracker, Questie-X, DBM-CoA, LootCollector, MRT-CoA, ElvUI-CoA, Zygor-CoA, SilverDragon, BoneUI, Details, CoA-Research (data only), Cell-CoA, Nameplates, AtlasLoot-CoA, CoA-Item-Search (data/tool), WeakAuras-CoA, UnclePlus-CoA, Refactor-CoA, UncleTranslate-CoA, SexyMap-CoA, VeilForge-CoA (graphics), and Mapster-CoA.
+Target: Ascension Conquest Reborn / WoW 3.3.5a. Current package: **v0.15.1**, a compatibility update on the v0.15.0 feature base. This repository tracks compatibility across the [uncle-bone addon repositories](https://github.com/uncle-bone).
 
-## Source-confirmed compatibility blockers in upstream 0.15.0
+## v0.15.1 source-review changes
 
-1. `Compatibility.lua`: default `manageConflicts=true` and `ManageStandalone()` invokes `DisableAddOn` against `Magnify-WotLK` and `ConquestMapZoom`, including when already loaded. This violates coexistence. Default and behavior must change so CWMI never disables another addon; where concurrent zoom is unsafe, provide a visible warning and explicit in-game choice about zoom-controller ownership, without changing other addon settings.
-2. `Compatibility.lua`: `GetConflict()` unconditionally blocks if Magnify-WotLK is loaded or an unknown WorldMapScrollFrame exists. Need interface-specific safe arbitration; don't blindly claim universal simultaneous zoom controllers are safe.
-3. `Compatibility.lua`: embedded LootCollector zoom handling assumes exact `2.2.0`, changes `OnFirstLoad` and can hide its frame. Replace with feature-driven adapter and reversible ownership logic.
-4. `LootCollectorCompat.lua`: `GetProviders()` returns unless version is exactly `1.0.9`. Validate actual module contracts in the user's latest LootCollector, not an old version string.
-5. `MapsterCompat.lua`: `MapSizeChanged()` includes a Mapster 1.3.9-specific anchor workaround. Test against latest Mapster-CoA implementation and Magnify integration.
-6. Questie-X, Zygor-CoA, SilverDragon and LootCollector map pins/POIs/waypoints must remain aligned at 1x to maximum zoom, pan, full/mini map and UI reload.
-7. Check ElvUI-CoA, DragonUI and Blizzard frame skinning/anchoring, Leatrix map controls, SexyMap-CoA minimap buttons, and interactions with the rest of the user's addons.
+The included `COMPATIBILITY-0.15.1.txt` reports these changes:
+
+- Does not disable Mapster/Magnify or ConquestMapZoom.
+- Leaves LootCollector's embedded zoom initialization untouched.
+- Detects required LootCollector adapter functions instead of requiring exactly version 1.0.9.
+- Retains conservative zoom-canvas arbitration so competing zoom engines stay enabled and CWMI yields when another engine owns the canvas.
+- Retains original licenses and notices.
+
+These are compatibility changes reported by the package; runtime testing across all custom addon combinations is still required.
+
+## Remaining compatibility checks
+
+- Mapster-CoA / Magnify and ConquestMapZoom: verify viewport ownership and zoom behavior when multiple engines are enabled.
+- Questie-X, Zygor-CoA, SilverDragon and LootCollector: verify map pins, quest objectives, waypoints, tooltips and scaling while panning and zooming.
+- ElvUI-CoA, DragonUI and Blizzard UI: verify frame skinning, anchoring and map controls.
+- SexyMap-CoA, Leatrix Maps and other map overlays: verify minimap and map-button interactions.
+- Regression-check DBM-CoA, Details, WeakAuras-CoA, AtlasLoot-CoA, UnclePlus-CoA, Cell-CoA, Nameplates, BoneUI, MRT-CoA and other repository addons.
 
 ## Validation status
 
-These are **code-inspection findings and targets, not confirmed working fixes**. The GitHub repo was initially empty; source/assets must be imported and tested before publishing a compatible release. No original author attribution/license files should be removed.
+The v0.15.1 release package is available from the [release page](https://github.com/uncle-bone/ConquestWorldMapImprovement/releases/tag/v0.15.1). Cross-addon in-game validation remains outstanding. These docs describe compatibility targets and package-reported changes, not universal compatibility certification.
