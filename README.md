@@ -1,10 +1,10 @@
 # Conquest World Map Improvement — Conquest Reborn
 
-Current release: **v0.15.1**, a compatibility-only update on the v0.15.0 feature base for the WoW 3.3.5a-based Conquest Reborn client.
+Current release: **v0.15.2**, a compatibility hotfix on the v0.15.0 feature base for the WoW 3.3.5a-based Conquest Reborn client.
 
-> **[⬇ Download ConquestWorldMapImprovement v0.15.1](https://github.com/uncle-bone/ConquestWorldMapImprovement/releases/download/v0.15.1/ConquestWorldMapImprovement-0.15.1-Compatibility.zip)** · [Release notes](https://github.com/uncle-bone/ConquestWorldMapImprovement/releases/tag/v0.15.1)
+> **[⬇ Download ConquestWorldMapImprovement v0.15.2](https://github.com/uncle-bone/ConquestWorldMapImprovement/releases/download/v0.15.2/ConquestWorldMapImprovement-0.15.2-Compatibility.zip)** · [Release notes](https://github.com/uncle-bone/ConquestWorldMapImprovement/releases/tag/v0.15.2)
 
-The release package contains the addon folder and original license notices. The v0.15.1 compatibility report says it no longer disables Mapster/Magnify or ConquestMapZoom, leaves LootCollector's embedded zoom initialization untouched, feature-detects required LootCollector functions, and retains a conservative zoom-canvas guard.
+The release package contains the addon folder and original license notices. The v0.15.2 hotfix corrects the default map-priority setting and limits a legacy Mapster 1.3.9 anchor correction to its known offset. It preserves external zoom provider enablement and the original license files. Questie-X 1.6.9 remains a target for in-game verification; certified integration is not claimed.
 
 **Runtime testing with all custom addons is still required.** See [COMPATIBILITY.md](COMPATIBILITY.md) for the compatibility scope and remaining checks.
 
