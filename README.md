@@ -3,7 +3,7 @@
 This repository tracks compatibility work for **Conquest World Map Improvement** (upstream version **0.15.0**) on the WoW 3.3.5a-based Conquest Reborn client.
 
 ## Scope
-Maintain compatibility with **all** World of Warcraft addons under [downingwow](https://github.com/downingwow), with special attention to Mapster-CoA / Magnify, Questie-X, LootCollector, SilverDragon, Zygor-CoA, ElvUI-CoA, DragonUI, SexyMap-CoA and Leatrix Plus. Also regression-check DBM-CoA, Details, WeakAuras-CoA, AtlasLoot-CoA, UnclePlus-CoA, Cell-CoA, Nameplates, BoneUI, MRT-CoA and other repository addons.
+Maintain compatibility with **all** World of Warcraft addons under [uncle-bone](https://github.com/uncle-bone), with special attention to Mapster-CoA / Magnify, Questie-X, LootCollector, SilverDragon, Zygor-CoA, ElvUI-CoA, DragonUI, SexyMap-CoA and Leatrix Plus. Also regression-check DBM-CoA, Details, WeakAuras-CoA, AtlasLoot-CoA, UnclePlus-CoA, Cell-CoA, Nameplates, BoneUI, MRT-CoA and other repository addons.
 
 ## Compatibility rules
 - Never disable, overwrite, or rewrite a user's other addons to resolve a map conflict.
