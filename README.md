@@ -1,23 +1,23 @@
 # Conquest World Map Improvement — Conquest Reborn
 
-**Current stable release:** v0.15.6 · **Client:** Ascension Conquest Reborn (WoW 3.3.5a)
+**Current stable release:** v0.15.11 · **Client:** Ascension Conquest Reborn (WoW 3.3.5a)
 
-> **[⬇ Download ConquestWorldMapImprovement v0.15.6](https://github.com/uncle-bone/ConquestWorldMapImprovement/releases/download/v0.15.6/ConquestWorldMapImprovement-0.15.6.zip)**
+> **[⬇ Download ConquestWorldMapImprovement v0.15.11](https://github.com/uncle-bone/ConquestWorldMapImprovement/releases/download/v0.15.11/ConquestWorldMapImprovement-0.15.11.zip)**
 
 [Releases](https://github.com/uncle-bone/ConquestWorldMapImprovement/releases) · [Compatibility tracking](COMPATIBILITY.md)
 
 ## About
 
-Conquest World Map Improvement enhances the Conquest Reborn world map with original artwork and compatibility-focused map controls. This build is designed to work alongside Mapster and other customized Conquest of Azeroth addons.
+Conquest World Map Improvement adds world-map zoom, terrain and exploration controls, quest-journal support, and optional addon integrations for Conquest Reborn. This compatibility-focused build is designed to work alongside Mapster and other customized CoA addons.
 
-## v0.15.6 — Responsive Mapster toolbar
+## Features
 
-- Keeps CWMI's Settings, Terrain, and Fog controls available while Mapster is enabled.
-- Adapts the toolbar to Mapster window resizing and anchors it to the visible map window.
-- Leaves zoom, pan, scaling, and map positioning to Mapster.
-- Preserves detailed map artwork and existing addon behavior.
+- World-map zoom and presentation with the included map artwork.
+- Terrain and exploration controls.
+- Quest journal integration and optional integrations with other addons.
+- Compatibility safeguards for overlapping map and zoom behavior.
 
-This package has not been tested in-game; combined addon compatibility still needs runtime verification.
+Combined addon compatibility should be checked in-game with your own addon setup.
 
 ## Installation
 
@@ -27,7 +27,7 @@ This package has not been tested in-game; combined addon compatibility still nee
 
 ## Compatibility
 
-CWMI is intended to coexist with Mapster-CoA/Magnify, Questie-X, LootCollector, SilverDragon, Zygor-CoA, ElvUI-CoA, and other UI and map addons. It should not silently disable another addon or overwrite its saved settings. Overlapping map ownership behavior must be handled safely. See [COMPATIBILITY.md](COMPATIBILITY.md) for compatibility tracking.
+CWMI is intended to coexist with Mapster-CoA/Magnify, Questie-X, LootCollector, SilverDragon, Zygor-CoA, ElvUI-CoA, and other UI and map addons. It should not silently disable another addon or overwrite its saved settings. See [COMPATIBILITY.md](COMPATIBILITY.md) for compatibility tracking.
 
 ## Attribution
 
