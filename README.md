@@ -2,8 +2,7 @@
 
 **Latest development build:** v0.15.14-dev · **Current stable release:** v0.15.11 · **Client:** Ascension Conquest Reborn (WoW 3.3.5a)
 
-> **[⬇ Download v0.15.14-dev (pre-release)](https://github.com/uncle-bone/ConquestWorldMapImprovement/releases/download/v0.15.14-dev/ConquestWorldMapImprovement-0.15.14-dev.zip)**  
-> [Download current stable v0.15.11](https://github.com/uncle-bone/ConquestWorldMapImprovement/releases/download/v0.15.11/ConquestWorldMapImprovement-0.15.11.zip)
+> **[Download](https://github.com/uncle-bone/ConquestWorldMapImprovement/releases/latest)**
 
 [Releases](https://github.com/uncle-bone/ConquestWorldMapImprovement/releases) · [Compatibility tracking](COMPATIBILITY.md)
 
