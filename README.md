@@ -1,8 +1,9 @@
 # Conquest World Map Improvement — Conquest Reborn
 
-**Current stable release:** v0.15.11 · **Client:** Ascension Conquest Reborn (WoW 3.3.5a)
+**Latest development build:** v0.15.14-dev · **Current stable release:** v0.15.11 · **Client:** Ascension Conquest Reborn (WoW 3.3.5a)
 
-> **[⬇ Download ConquestWorldMapImprovement v0.15.11](https://github.com/uncle-bone/ConquestWorldMapImprovement/releases/download/v0.15.11/ConquestWorldMapImprovement-0.15.11.zip)**
+> **[⬇ Download v0.15.14-dev (pre-release)](https://github.com/uncle-bone/ConquestWorldMapImprovement/releases/download/v0.15.14-dev/ConquestWorldMapImprovement-0.15.14-dev.zip)**  
+> [Download current stable v0.15.11](https://github.com/uncle-bone/ConquestWorldMapImprovement/releases/download/v0.15.11/ConquestWorldMapImprovement-0.15.11.zip)
 
 [Releases](https://github.com/uncle-bone/ConquestWorldMapImprovement/releases) · [Compatibility tracking](COMPATIBILITY.md)
 
@@ -10,7 +11,7 @@
 
 Conquest World Map Improvement adds world-map zoom, terrain and exploration controls, quest-journal support, and optional addon integrations for Conquest Reborn. This compatibility-focused build is designed to work alongside Mapster and other customized CoA addons.
 
-## Features
+## v0.15.14-dev — ElvUI and Mapster compatibility\n\n- Fixes ElvUI backdrop suppression when Mapster controls zoom.\n- Checks viewport position to keep the CWMI toolbar anchored within the map window.\n- Preserves ElvUI map-coordinate positioning when Mapster controls zoom, plus existing DragonUI and Mapster integrations.\n\nThis development build needs in-game verification with ElvUI-CoA and Mapster-CoA running together.\n\n## Features
 
 - World-map zoom and presentation with the included map artwork.
 - Terrain and exploration controls.
