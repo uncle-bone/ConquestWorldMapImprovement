@@ -1,7 +1,6 @@
 # Conquest World Map Improvement — Conquest Reborn
 
 **Latest development build:** v0.15.14-dev · **Current stable release:** v0.15.11 · **Client:** Ascension Conquest Reborn (WoW 3.3.5a)
-**Current stable release: v0.15.11.**
 
 > **[Download Here!](https://coa-research.unclebone.workers.dev/download/ConquestWorldMapImprovement)**
 
